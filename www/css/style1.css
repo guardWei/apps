@@ -1,0 +1,88 @@
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-color-red{
+  color:#ef473a;
+}
+.text-color-white{
+  color:white;
+}
+.bg-red{
+  background-color:#ef473a;
+}
+.sub{
+  background-color:#ef473a;
+  color:white;
+  text-align: center;
+  height:50px;
+  line-height: 50px;
+  font-size:14px;
+  font-family: '黑体';
+  curosr: pointer;
+}
+.col-dz{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 5px 0px;
+  display: block;
+  width: 100%;
+}
+.col-dz-np{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  display: block;
+  width: 100%;
+}
+.row-dz {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  width: 100%;
+}
+.item-dz {
+  border-top: 1px solid #f2f2f2;
+  background-color: #fff;
+  color: #444;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  padding: 4px 10px;
+  font-size: 14px;
+}
+.price{
+  font-size:14px;
+  color:#ef473a;
+  padding-left: 16px;
+  padding-right: 15px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+}
+
+.float-none-middle{
+  float:right;
+  height:75px;
+  line-height: 75px;
+}
+
+.padding-none{
+  padding: 0;
+}
+

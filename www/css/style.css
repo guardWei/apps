@@ -1,0 +1,1152 @@
+/*重写ionic item相关的css*/
+.item h2{
+    font-size: 14px;
+}
+.item-small{
+    padding: 12px;
+    font-size: 14px;
+    padding-right: 34px;
+}
+.examination-content img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.no-padding{
+    padding: 0!important;
+}
+/*shiyy add */
+#contdiv img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/*隐藏头*/
+.er-popup .popup-head{
+    display: none;
+}
+/*圆角*/
+.er-popup .popup{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+}
+
+.item-radio .radio-icon{
+    background: #12b2fd;
+    padding: 0;
+    width: 20px;
+    border-radius: 10px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+    top: 35%;
+    right: 5%;
+}
+
+.popup-message{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.cuServer{
+    height: 100%;
+}
+.cuServer iframe{
+    min-width: 100%;
+    height: 500px;
+}
+/*shiyy end */
+/* Empty. Add your own CSS if you like */
+html,body{
+    font-family: 'PingFang SC','HanHei SC','Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+    color: #4e4e4e;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'PingFang SC','HanHei SC','Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+    color: #333;
+    font-weight: normal;
+}
+.buttons-badge{
+    position: relative;
+    padding-right: 10px;
+}
+.buttons-badge i.ion{
+    font-size: 30px;
+}
+.buttons-badge .badge{
+    position: absolute;
+    top: -2px;
+    left: 18px;
+    font-size: 12px;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.with-badge{
+    position: relative;
+    display: inline-block;
+}
+.with-badge .badge{
+    position: absolute;
+    top: -2px;
+    left: 18px;
+    font-size: 12px;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.bar-calm .button.button-clear{
+    font-size: 14px;
+}
+.item p{
+    color: #999;
+}
+.button-bar > .button:first-child{
+    border-radius: 0;
+}
+.bar.bar-calm{
+    background-color: #12b2fd;
+}
+.slider-pager .slider-pager-page{
+    color: #11c1f3;
+}
+.list .item{
+    border: none;
+    border-bottom: 1px solid #f2f2f2;
+    margin: 0;
+}
+.list .item:first-child{
+    border-top: none;
+}
+.list .item:last-child{
+    border-top: none;
+}
+p{
+    line-height: 1.5;
+}
+.ion-ios-heart-outline,.ion-ios-chatboxes-outline{
+    font-size: 16px;
+}
+.bar{
+    border: none;
+    background-size: 100% 0;
+}
+.slider-pager{
+    text-align: right;
+    bottom: 5px;
+    right: 5px;
+}
+.slider-pager .ion-record{
+    font-size: 10px;
+    -webkit-text-size-adjust:none;
+}
+.sub_menu .item{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #444;
+}
+.bg-white{
+    background: #fff;
+}
+.button-blue{
+    background: #12b2fd;
+    color: #fff;
+}
+.grid-right{
+    text-align: right;
+}
+.img-circle{
+    border-radius:50%;
+}
+img{
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+/*定义响应式图片*/
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.col-text_right{
+    text-align: right;
+}
+
+
+.pane, .view{
+    background: #f1f0ee;
+}
+.tabs{
+    background-color: #f9f9f9;
+    background-image: linear-gradient(0deg, #f1f0ee, #f1f0ee 50%, transparent 50%);
+    height: 55px;
+}
+.tab-item .icon{
+    height: 36px;
+    font-size: 36px;
+}
+ion-tabs.tabs-color-active-positive .tab-item{
+    /*    color: #b2b2b2;*/
+}
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated{
+    color: #12b2fd;
+}
+.guide{
+    background: #fff;
+    padding: 0;
+    text-align: center;
+}
+.guide img{
+    width: 65%;
+}
+.guide .col,.guide .row{
+    padding: 0;
+    margin: 0;
+}
+.guide .col{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.guide p{
+    color: #b8b8b8;
+}
+.guide .col-right,.guide .col-left{
+    height: 200px;
+}
+.guide .col-left{
+    border-right: 1px solid #f2f2f2;
+}
+.guide .col-right{
+    display: block;
+}
+.guide .col-right .cloud_test{
+    height: 100px;
+}
+.guide .cloud_test .col{
+    display:-webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    justify-content:center;
+    -webkit-justify-content: center;
+}
+.guide .cloud_test .cloud_test_intro{
+    text-align: left;
+}
+.guide .cloud_test img{
+    width: 48%;
+}
+.guide h4{
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.guide h4,.guide h5{
+    color: #4e4e4e;
+}
+.guide p,.guide h5{
+    font-size: 12px;
+    font-weight: normal;
+}
+.guide h5,.guide p{
+    margin: 0;
+    margin-top: 10px;
+}
+.guide .cloud_test .cloud_test_intro h4{
+    margin-bottom: 5px;
+}
+.guide .cloud_test .cloud_test_intro p{
+    margin-top: 0;
+}
+.guide .col-right .consult_address{
+    border-top: 1px solid #f2f2f2;
+    height: 100px;
+}
+.guide .col-right .consult{
+    border-right: 1px solid #f2f2f2;
+    height: 100px;
+}
+.guide .col-right .address{
+    height: 100px;
+}
+.slider_box{
+    margin-top: 10px;
+}
+#news .slider_box{
+    margin-top: 0;
+}
+#news .health_news .item{
+    padding-bottom: 40px;
+}
+.medical_cloud .health_news .item{
+    padding-bottom: 40px;
+}
+.health_news p{
+    white-space: normal;
+    font-size: 12px;
+    max-height: 36px;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+.health_news .item{
+    /*    border: none;*/
+}
+.health_news .item h2{
+    /*    overflow: auto;*/
+    text-overflow: clip;
+    white-space: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #333;
+}
+.health_news .item .item{
+    border: none;
+    background: none;
+}
+.health_news .footer{
+    background: #fff;
+    padding: 0 10px;
+    color: #666;
+    font-size: 12px;
+}
+.health_news .footer .row{
+    padding: 0;
+    /*    border-top: 2px solid #eee;*/
+}
+.health_news .footer i{
+    margin-right: 2px;
+}
+.health_news .footer .ion-ios-chatboxes-outline{
+    margin-left: 10px;
+}
+.health_news .footer .row .col{
+    padding: 5px 0;
+}
+.health_news .item-complex .item-content, .item-radio .item-content{
+    padding: 5px 20px 5px 0px;
+}
+.list-header{
+    margin-top: 10px;
+    background: #fff;
+}
+.list-header a{
+    text-decoration: none;
+    color: #a8a8a8;
+    font-weight: normal;
+}
+.list-header a i{
+    margin-left: 5px;
+}
+.list-header h4{
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.n-price{
+    font-size: 1.0rem;
+    margin-right: 10px;
+}
+.o-price{
+    text-decoration: line-through;
+}
+.add-shopcart{
+    color: #fff;
+    background: #59c9fe;
+    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.interactive{
+    position: absolute;
+    bottom: 6px;
+    right: 20px;
+}
+.interactive i{
+    margin-left: 5px;
+}
+.user_home .item{
+    font-size: 100%;
+}
+.user_home .name{
+    color: #fff;
+}
+.user_home .header{
+    border-color: #0a9dc7;
+    background-color: #12b2fd;
+    color: #fff;
+    padding: 0;
+}
+.user_home .avstar{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.user_home .row{
+    padding-right: 0;
+}
+.user_home .main-menu{
+    padding: 0;
+    margin-top: 10px;
+}
+.user_home .bonus{
+    background: #0d7cb1;
+    height: 34px;
+    line-height: 34px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    padding: 0;
+    text-align: center;
+}
+.main-menu .col{
+    text-align: center;
+}
+.main-menu i{
+    font-size: 30px;
+    color: #999;
+}
+.ion-chevron-right{
+    color: #a8a8a8;
+}
+.item .ion-chevron-right{
+    font-size: 14px;
+    right: 5px;
+}
+.my_order a{
+    float: right;
+    text-decoration: none;
+    color: #a8a8a8;
+}
+.my_order .ion-chevron-right{
+    margin-left: 8px;
+}
+.list.main-menu{
+    margin-bottom: 10px;
+}
+.list.main-menu-sub{
+    margin-bottom: 10px;
+}
+.list.main-menu-sub-2{
+    margin-bottom: 60px;
+}
+.main-menu .col{
+    position: relative;
+    font-size: 12px;
+}
+.main-menu .badge{
+    border: 1px solid red;
+    background: #ef473a;
+    color: #fff;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    top: -2px;
+    right: 19px;
+    display: inline-block;
+
+}
+.main-menu .item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.main-menu-sub .item,.main-menu .item.my_order{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.main-menu-sub .icon-before{
+    font-size: 200%;
+}
+.main-menu-sub .icon-emr{
+    color: #f76897;
+}
+.main-menu-sub .icon-coupon{
+    color:#25c3f0;
+}
+.main-menu-sub .icon-health_bonus{
+    color:#94f15c;
+}
+.main-menu-sub .icon-collection{
+    color:#5cf194;
+}
+.main-menu-sub .icon-setting{
+    color:#49adfb;
+}
+.main-menu-sub .icon-mark{
+    color:#f6c133;
+}
+.main-menu-sub .icon-Feedback{
+    color:#f64e44;
+}
+.feedback p{
+    padding: 10px;
+    text-indent: 2em;
+}
+.news-detail{
+    font-size: 12px;
+}
+.news-detail h4{
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+.news-detail h5,.examination-detail h5{
+    background: #fff;
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+    color: #12b2fd;
+    border-bottom: 1px solid #f2f2f2;
+}
+.news-detail-content{
+    position: relative;
+}
+.news-detail-content .font-control{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+.font-control .icon-font-plus{
+    font-size: 24px;
+}
+.font-control .icon-font-minus{
+    font-size: 22px;
+}
+
+.examination-footer{
+    padding: 0;
+    border-top: 1px solid #eee;
+    height: 50px;
+    font-size: 12px;
+}
+.examination-footer .button{
+    margin: 0;
+    height: auto;
+    line-height: 50px;
+    font-size: 14px;
+}
+.examination-footer .col{
+    padding: 0;
+    text-align: center;
+}
+.examination-footer .icon-service{
+    color: #12b2fd;
+    font-size: 22px;
+    display: block;
+}
+.news-detail .news-intro{
+    border: none;
+    background: #eee;
+}
+.news-content-end .icon{
+    font-size: 28px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 6px;
+    display: inline-block;
+}
+.news-content-end .with-badge .badge{
+    left: 25px;
+    background: #ccc;
+    color: #fff;
+}
+.news-content-end .with-badge.liked .icon{
+    border: 1px solid #59c9fe;
+    color: #59c9fe;
+}
+.news-content-end .with-badge.liked .badge{
+    background: #59c9fe;
+}
+.news-content-end p{
+    margin-top: 5px;
+}
+.examination-intro{
+    position: relative;
+}
+.examination-intro h4{
+    font-size: 14px;
+    margin: 5px 0;
+}
+.examination-intro .share{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.examination-intro .ordered{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.ion-android-share-alt{
+    padding-right: 5px;
+}
+.cart .row{
+    padding: 0;
+}
+.cart-content{
+    margin-bottom: 5px;
+}
+.bar-footer-cart{
+    padding: 0;
+    height: 50px;
+    border-top: 1px solid #eee;
+}
+.bar-footer-cart .col{
+    padding: 0;
+}
+.bar-footer-cart .button-account{
+    min-height: 50px;
+}
+.bar-footer-cart .button{
+    font-size: 14px;
+}
+.checkbox-small{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+.checkbox-small .checkbox input,.checkbox-small .checkbox .checkbox-icon{
+    width: 20px;
+    height: 20px;
+}
+.checkbox-small .checkbox{
+    top: 55%;
+}
+.checkbox-small .checkbox input:after, .checkbox-small .checkbox-icon:after{
+    top: 31%;
+    width: 10px;
+}
+.bar-footer-cart .checkbox-small .checkbox{
+    top: 65%;
+}
+.bar-footer-cart .checkbox-small{
+    border:none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.avstar.checker{
+    height: 120px;
+    line-height: 120px;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.avstar.checker img{
+    width: 20%;
+}
+.info.checker .input-label{
+    /*    color: #aaa;*/
+    font-size: 14px;
+    /*    max-width: 92%;*/
+}
+.checker .row{
+    padding: 0;
+}
+.checker .item-select .row{
+    padding: 8px 0;
+}
+.checker .input-label{
+    max-width: 25%;
+}
+.checker .item-select .input-label{
+    max-width: 92%;
+}
+.checker .col{
+    font-size: 14px;
+    padding: 0 5px;
+}
+.checker img{
+    width: 100%;
+}
+.order.success .card{
+    padding: 0 5px;
+}
+.order.success h5{
+    color: #12b2fd;
+    text-align: center;
+}
+.order.success .col{
+    padding: 0;
+}
+.order.success .order_num{
+    text-align: center;
+}
+.order.success .order_num img{
+    width: 50%;
+}
+.confirm_order{
+    margin-bottom: 60px;
+}
+.confirm_order .icon{
+    font-size: 14px;
+}
+.confirm_order .ion-person,.confirm_order .ion-location{
+    font-size: 20px;
+}
+.confirm_order .ion-person{
+    color: #fa9943;
+}
+.confirm_order .ion-location{
+    color: #2de22d;
+}
+.confirm_order .item{
+    font-size: 14px;
+}
+.confirm_order .item-note{
+    color: #444;
+}
+.cofirm-order-sub{
+    margin-top: 10px;
+}
+.register .item-input-wrapper,.forgot_paddword .item-input-wrapper{
+    background: none;
+}
+.login{
+    padding-top: 10px;
+    background: #fff;
+}
+.login-form{
+    margin-bottom: 5px;
+}
+.login-form-sub{
+    margin-bottom: 10px;
+}
+.login .padding{
+    padding:2px 10px;
+}
+.login .login-banner img{
+    width: 100%;
+    margin: 0 auto;
+}
+.login .list .item:first-child{
+    border-top: 1px solid #f2f2f2;
+}
+.login .other-login{
+    margin-top: 20px;
+}
+.other-login h5{
+    text-align: center;
+    color: #777;
+    margin: 5px 0;
+}
+.other-login .col{
+    text-align: center;
+    color: #777;
+}
+.other-login img{
+    width: 50%;
+    margin: 0 auto;
+}
+.other-login p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.records{
+    margin-top: 10px;
+}
+.record-header{
+    border-bottom: 1px solid #f2f2f2;
+    padding: 5px;
+}
+.record-content h5{
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+.medical-records .checker{
+    padding: 5px;
+}
+.coupon .item{
+    padding: 0;
+    border:none;
+}
+.coupon .card{
+    margin: 5px 10px;
+}
+.coupon-desc .row{
+    padding: 0;
+}
+.coupon-desc .col{
+    padding: 10px;
+}
+.coupon-desc .col-33{
+    color: #fff;
+    text-align: center;
+    background-image: url(../img/ben.png);
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+.coupon-desc.unused  .col-33{
+    background-color: #f24f52;
+}
+.coupon-desc .col-33 p{
+    color: #fff;
+    font-size: 14px;
+}
+.coupon-desc .col-33 .price{
+    font-size: 18px;
+}
+.coupon-desc.used .col-33{
+    background-color: #41aaec;
+}
+.coupon-desc.expired .col-33{
+    background-color: #ccc;
+}
+.coupon-desc h4{
+    font-size: 18px;
+}
+.coupon-desc p{
+    font-size: 12px;
+}
+.coupon-desc .col-67{
+    text-align: right;
+}
+.coupon-desc .col-67 p{
+    margin-top: 20px;
+}
+.personal_info{
+    font-size: 14px;
+}
+.personal_info .list .row,.personal_info .list .col{
+    padding: 0;
+}
+.earn_health_coins h4{
+    background: #fff;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+.earn_health_coins .item{
+    font-size: 14px;
+}
+.earn_health_coins .row{
+    padding: 0;
+}
+.earn_health_coins .banner{
+    padding: 10px 0;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.earn_health_coins .banner img{
+    width: 50%;
+    margin: 0 auto;
+}
+.earn_health_coins .banner p{
+    text-align: center;
+    font-size: 16px;
+    color: #12b2fd;
+    margin-top: 10px;
+}
+.earn_health_coins .banner .num_task{
+    color: #ff1010;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.earn_health_coins .col-20{
+    color: #f9d291;
+}
+.earn_health_coins .finished .col-20{
+    color: #29bafd;
+}
+.earn_health_coins .icon-beginner-mission{
+    color: #39de7f;
+    font-size: 16px;
+}
+.earn_health_coins .icon-daily-mission{
+    color: #f65d54;
+}
+.earn_health_coins .icon-health-coins{
+    color: #29bafd;
+}
+.earn_health_coins .ion-checkmark-circled{
+    color: #29bafd;
+    font-size: 1.2em;
+}
+.my_orders .list-item{
+    margin-bottom: 10px;
+}
+.my_orders .list-item .item-header{
+    background: #fff;
+    border-bottom: 1px solid #f2f2f2;
+}
+.my_orders .list-item .item-header .col-20{
+    color: #ff986b;
+}
+.my_orders .list-item .item-footer{
+    background: #fff;
+    padding: 10px 5px 0 5px;
+}
+.relationship{
+    background: #12b2fd;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+}
+.icon-male,.icon-female{
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.icon-female{
+    background: #fd8c8c;
+}
+.icon-male{
+    background: #5ad488;
+}
+.add-medical-records .item{
+    padding: 0;
+}
+.diseased_desc textarea{
+    padding: 10px;
+}
+#shop .bar{
+    top: 0;
+    position: relative;
+}
+/*二级菜单*/
+#shop .bar .sub_header_list .button.button-clear{
+    border-bottom: 1px solid #eee;
+}
+#shop .sub_header_list{
+    width: 120%;
+}
+#shop .sub_header_list .button{
+    width: 20%;
+    min-width: 30px;
+    color:#666;
+    font-size: 14px;
+    -webkit-font-smoothing: auto;
+}
+#shop .bar .sub_header_list .button.sub_button_select{
+    border-bottom:2px solid #12b2fd;
+    position:relative;
+    color: #12b2fd;
+}
+#shop .bar-subheader{
+    border-bottom: none;
+    padding: 0;
+    height: auto;
+}
+#shop .scroll-view.scroll-x{
+    overflow-x:hidden;
+}
+#shop p{
+    font-size: 12px;
+}
+
+#news .bar{
+    top: 0;
+    position: relative;
+}
+/*二级菜单*/
+#news .bar .sub_header_list .button.button-clear{
+    border-bottom: 1px solid #eee;
+}
+#news .sub_header_list{
+    width: 120%;
+}
+#news .sub_header_list .button{
+    width: 20%;
+    min-width: 30px;
+    color:#666;
+    font-size: 14px;
+    -webkit-font-smoothing: auto;
+}
+.coupon .bar .sub_header_list .button.sub_button_select{
+    border-bottom:2px solid #12b2fd;
+    position:relative;
+    color: #12b2fd;
+}
+#news .bar .sub_header_list .button.sub_button_select{
+    border-bottom:2px solid #12b2fd;
+    position:relative;
+    color: #12b2fd;
+}
+#news .bar-subheader{
+    border-bottom: none;
+    padding: 0;
+    height: auto;
+}
+#news .scroll-view.scroll-x{
+    overflow-x:hidden;
+}
+
+
+#my_orders .bar{
+    top: 0;
+    position: relative;
+}
+/*二级菜单*/
+#my_orders .bar .sub_header_list .button.button-clear{
+    border-bottom: 1px solid #eee;
+}
+#my_orders .sub_header_list{
+    width: 100%;
+}
+#my_orders .sub_header_list .button{
+    width: 20%;
+    min-width: 30px;
+    color:#666;
+    font-size: 14px;
+    -webkit-font-smoothing: auto;
+}
+#my_orders .bar .sub_header_list .button.sub_button_select{
+    border-bottom:2px solid #12b2fd;
+    position:relative;
+    color: #12b2fd;
+}
+#my_orders .bar-subheader{
+    border-bottom: none;
+    padding: 0;
+    height: auto;
+}
+#my_orders .scroll-view.scroll-x{
+    overflow-x:hidden;
+}
+.my_orders button.btn-grey{
+    background: none;
+    border-color: #b2b2b2;
+    margin-right: 10px;
+}
+.my_orders button.btn-yellow{
+    border-color: #ff986b;
+    color: #ff986b;
+    background: none;
+    padding: 0 12px;
+}
+
+.related_items{
+    margin-bottom: 0;
+}
+.comments .item-thumbnail-left img{
+    max-width:40px;
+    max-height:40px;
+}
+.comments .item-thumbnail-left, .comments .item-thumbnail-left .item-content{
+    padding-left: 60px;
+}
+.comment{
+    border-top: 1px solid #f2f2f2;
+}
+.comment .icon-compose{
+    position: relative;
+}
+.comment .icon-compose .badge{
+    padding: 1px 2px;
+    font-size: 12px;
+    position: absolute;
+    top:-4px;
+    left: 22px;
+    border-radius: 5px;
+}
+.comment .row{
+    padding-left: 0;
+    padding-right: 0;
+}
+.comment .col{
+    padding-left: 0;
+    padding-right: 0;
+}
+.comment .icon{
+    font-size: 25px;
+    color: #aaa;
+}
+.icon-praise{
+    font-size: 30px;
+}
+.setting_help a{
+    font-size: 100%;
+}
+.cuServer iframe{
+    min-width: 100%;
+    min-height: 500px;
+}
+#news .item-thumbnail-left > img:first-child, #news .item-thumbnail-left .item-image, #news .item-thumbnail-left .item-content > img:first-child, #news .item-thumbnail-left .item-content .item-image{
+    max-width: 130px;
+    max-height: 90px;
+}
+#news .item-thumbnail-left, #news .item-thumbnail-left .item-content{
+    padding-left: 153px;
+}
+.medical_cloud .item-thumbnail-left > img:first-child, .medical_cloud .item-thumbnail-left .item-image, .medical_cloud .item-thumbnail-left .item-content > img:first-child, .medical_cloud .item-thumbnail-left .item-content .item-image{
+    max-width: 130px;
+    max-height: 90px;
+}
+.medical_cloud .item-thumbnail-left, .medical_cloud .item-thumbnail-left .item-content{
+    padding-left: 153px;
+}
+.item-testing > img:first-child, .item-testing .item-image, .item-testing .item-content > img:first-child, .item-testing .item-content .item-image{
+    max-width: 108px;
+    max-height: 75px;
+}
+.item-testing, .item-testing .item-content{
+    padding-left: 133px;
+}
+.order_detail{
+    margin-bottom: 0;
+}
+.order_detail .item-middle,.order_detail .item-time{
+    background: #fff;
+    margin-top: 10px;
+}
+.order_detail .item-time {
+    padding: 10px;
+}
+.ion-ios-arrow-back{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/****图片全屏样式，-- author：hejj --*****/
+.transparent {
+    background: black !important;
+}
+.image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+.fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+

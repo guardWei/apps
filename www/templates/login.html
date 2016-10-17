@@ -1,0 +1,32 @@
+<ion-view hide-tabs="true" view-title="登录">
+    <ion-content class="login">
+        <div class="login-banner">
+            <img src="img/login-banner.png" alt="" class="img-responsive"  style="height:150px;">
+        </div>
+
+        <div class="list list-inset login-form">
+            <label class="item item-input">
+                <i class="icon ion-person placeholder-icon"></i>
+                <input type="text" ng-model="user.idNum" placeholder="请输入身份证号">
+            </label>
+            <label class="item item-input">
+                <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+                <input type="password" ng-model="user.pwd" placeholder="请输入密码">
+            </label>
+        </div>
+
+        <div class="padding row login-form-sub">
+            <div class="col">
+                <a href="#">忘记密码?</a>
+            </div>
+            <div class="col grid-right">
+                <a href="#/register">快速注册</a>
+            </div>
+        </div>
+
+        <div class="padding">
+            <button class="button button-block button-blue" ng-click="login(user);">登录</button>
+        </div>
+
+    </ion-content>
+</ion-view>
