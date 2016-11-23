@@ -25,8 +25,8 @@
             <label class="item item-input item-select" ng-click="showUserSex();">
                 <div class="input-label row">
                     <div clas="col"> 性别</div>
-                    <div class="col col-text_right" ng-if="user.sex=='0'">男</div>
-                    <div class="col col-text_right" ng-if="user.sex=='1'">女</div>
+                    <div class="col col-text_right" ng-if="user.sex=='0'">女</div>
+                    <div class="col col-text_right" ng-if="user.sex=='1'">男</div>
                     <div class="col col-text_right" ng-if="user.sex=='2'">其他</div>
                 </div>
             </label>
@@ -60,9 +60,12 @@
             </label>
 
             <div ng-if="user.userType=='0'">
-                <label class="item item-input">
-                    <span class="input-label">就诊医院</span>
-                    <input type="text" ng-model="user.medicalHospital">
+                <label class="item item-input item-select" ng-click="showMedicalHospital();">
+                    <div class="input-label row">
+                      <div clas="col">就诊医院</div>
+                      <div class="col col-text_right" ng-if="user.medicalHospital=='1000'">温州人民医院</div>
+                      <div class="col col-text_right" ng-if="user.medicalHospital=='1001'">合肥安为康</div>
+                    </div>
                 </label>
             </div>
             <div ng-if="user.userType=='1'">

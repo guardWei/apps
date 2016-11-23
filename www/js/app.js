@@ -89,12 +89,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
                 }
             })
 
-            .state('tab.imageHandle', {
-                url: '/imageHandle',
+            .state('tab.exchange', {
+                url: '/exchange',
                 views: {
-                    'tab-imageHandle': {
-                        templateUrl: 'templates/tab-imageHandle.html',
-                        controller: 'imageHandleCtrl'
+                    'tab-exchange': {
+                        templateUrl: 'templates/tab-exchange.html',
+                        controller: 'exchangeCtrl'
                     }
                 }
             })

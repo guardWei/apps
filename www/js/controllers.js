@@ -16,7 +16,45 @@ angular.module('starter.controllers', [])
     })
 
     //查看报告controller
-    .controller('viewReportCtrl', function ($scope, $cordovaInAppBrowser, $cordovaToast) {
+    .controller('viewReportCtrl', function ($scope, $rootScope,$cordovaInAppBrowser, $cordovaToast,$ionicLoading,$state,viewReportService) {
+        var reportList = [];
+        if($rootScope.isLogin && window.localStorage.getItem("user_lumanmed")!=null){
+
+            $ionicLoading.show({
+                content: 'Loading',
+                animation: 'fade-in',
+                showBackdrop: false,
+
+                maxWidth: 200,
+                showDelay: 0
+            });
+            var user = JSON.parse(window.localStorage.getItem("user_lumanmed"));
+
+            viewReportService.getReport(user.patientId).then(function (r) {
+                $ionicLoading.hide();
+                var reportInfo = viewReportService.getReportInfo();
+                console.log(reportInfo);
+                if (reportInfo.status=='1') {//注册成功
+                    console.log(reportInfo.data);
+                    reportList = eval(reportInfo.data);
+                    console.log(reportList)
+                    $scope.reports = reportList;
+                }else{
+                    $cordovaToast.show(reportInfo.message, 'short', 'center')
+                        .then(function (success) {
+                            console.log(reportInfo.message);
+                        }, function (error) {
+                            console.log(error);
+                        });
+                }
+
+            })
+        }else{
+            //退出重新登录
+            $state.go('login');
+        }
+
+
 
         $scope.showReport = function (url) {
             console.log(url);
@@ -45,8 +83,8 @@ angular.module('starter.controllers', [])
     })
 
 
-    //医生图像处理controller
-    .controller('imageHandleCtrl', function ($scope) {
+    //医患交流controller
+    .controller('exchangeCtrl', function ($scope) {
 
     })
 
@@ -82,8 +120,20 @@ angular.module('starter.controllers', [])
     })
 
     //设置帮助controller
-    .controller('settingHelpCtrl', function ($scope) {
+    .controller('settingHelpCtrl', function ($scope,$rootScope,$state) {
 
+          if(!$rootScope.isLogin && window.localStorage.getItem("user_lumanmed")==null){
+              console.log("未登录");
+              $state.go("login");
+          }
+          $scope.loginOut = function(){
+
+            $rootScope.isLogin= false;
+            window.localStorage.removeItem("user_lumanmed");
+            window.localStorage.removeItem("lumanmedIsLogin");
+            console.log("退出");
+            $state.go("login");
+         }
     })
 
     //修改密码controller
@@ -120,6 +170,15 @@ angular.module('starter.controllers', [])
         $scope.login = function (user) {
             console.log(user);
 
+            if(user.idNum ==null || user.idNum==""){
+                $cordovaToast.show("请输入身份证号！", 'short', 'center');
+                return false;
+            }
+            if(user.pwd=="" || user.pwd==null){
+                $cordovaToast.show("请填写登录密码", 'short', 'center');
+                return false;
+            }
+
             //调用插件loading...
             $ionicLoading.show({
                 content: 'Loading',
@@ -151,7 +210,8 @@ angular.module('starter.controllers', [])
                         'age': loginInfo.user.age,
                         'sex': loginInfo.user.sex,
                         'userType': loginInfo.user.userType,
-                        'activeDegree': loginInfo.user.activeDegree
+                        'activeDegree': loginInfo.user.activeDegree,
+                        'patientId': loginInfo.user.patientId
                     };
 
                     obj = JSON.stringify(obj);
@@ -195,8 +255,8 @@ angular.module('starter.controllers', [])
         $scope.showUserSex = function () {
             $ionicActionSheet.show({
                 buttons: [
-                    {text: '男'},
                     {text: '女'},
+                    {text: '男'},
                     {text: '其他'}
                 ],
                 titleText: '',
@@ -236,6 +296,26 @@ angular.module('starter.controllers', [])
                 }
             });
         }
+
+
+        $scope.showMedicalHospital = function () {
+            $ionicActionSheet.show({
+                buttons: [
+                    { text: '合肥安为康' }
+                ],
+                titleText: '',
+                cancelText: '返回',
+                buttonClicked: function (index) {
+                    if (index == '0') {
+                        $scope.user.medicalHospital = "1001";
+                    }
+                    return true;
+                }
+            });
+        }
+
+
+
 
         $scope.userRegister = function (user) {
             console.log($scope.user);

@@ -49,7 +49,7 @@ angular.module('starter.services', [])
             register: function (user) {
                 var deferred = $q.defer();
 
-                resourceRegister.goRegister({registerStr:JSON.stringify(user)},function(r){
+                resourceRegister.goRegister({registerStr:encodeURI(JSON.stringify(user))},function(r){
                     registerInfo = {
                         'status': r.status,
                         'message': r.msg
@@ -71,8 +71,37 @@ angular.module('starter.services', [])
         }
 
     })
-    .factory('viewReportService',function($resource,ENV){
+    .factory('viewReportService',function($resource,ENV,$q){
+        var reportInfo = {};
+        var getReportUrl = ENV.serverUrl + "/report/getReportByPatientId";
 
+        var resourceGetReport = $resource(getReportUrl,{patientId:'@reportStr'},{goGetReport:{method:'post',timeout:3000}});
+
+        return {
+            getReport: function (patientId) {
+                var deferred = $q.defer();
+
+                resourceGetReport.goGetReport({reportStr:patientId},function(r){
+                    reportInfo = {
+                        'status': r.status,
+                        'message': r.msg,
+                        data: r.data
+                    }
+                    deferred.resolve(r);
+                },function(error){
+                    reportInfo = {
+                        'status': '-1',
+                        'message': '网络异常，请稍后再试'
+                    }
+                    deferred.reject(error);
+                });
+
+                return deferred.promise;
+            },
+            getReportInfo:function(){
+                return reportInfo;
+            }
+        }
     })
 
     .factory('modifyPasswordService',function($resource,ENV,$q){
